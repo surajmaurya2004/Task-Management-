@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Elite Task Manager</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+<i class="fa-solid fa-list-check"></i>
+<span>Elite Task Manager</span>
+</div>
+
+<ul>
+
+<li class="active">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</li>
+
+<li>
+<i class="fa-solid fa-list-check"></i>
+Task Management
+</li>
+
+<li>
+<i class="fa-solid fa-chart-line"></i>
+Analytics
+</li>
+
+<li>
+<i class="fa-solid fa-users"></i>
+Collaboration
+</li>
+
+<li>
+<i class="fa-solid fa-calendar"></i>
+Calendar
+</li>
+
+<li>
+<i class="fa-solid fa-gear"></i>
+Settings
+</li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<h2>Dashboard</h2>
+
+<div class="profile">
+
+<i class="fa-solid fa-bell"></i>
+
+<div class="avatar">
+JD
+</div>
+
+</div>
+
+</div>
+
+<!-- Welcome -->
+
+<div class="welcome">
+
+<h1>Welcome Back, John Doe 👋</h1>
+
+<p>Manage your projects efficiently.</p>
+
+</div>
+
+<!-- Cards -->
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon blue">
+<i class="fa-solid fa-spinner"></i>
+</div>
+
+<h3>Tasks in Progress</h3>
+
+<h2 id="progress">8</h2>
+
+<p class="green">↑12% last week</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon green">
+<i class="fa-solid fa-check"></i>
+</div>
+
+<h3>Completed Tasks</h3>
+
+<h2 id="completed">21</h2>
+
+<p class="green">↑8% last week</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon purple">
+<i class="fa-solid fa-users"></i>
+</div>
+
+<h3>Team Members</h3>
+
+<h2>12</h2>
+
+<p class="green">+2 this month</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon red">
+<i class="fa-solid fa-calendar-days"></i>
+</div>
+
+<h3>Upcoming Deadlines</h3>
+
+<h2>5</h2>
+
+<p class="red-text">2 urgent</p>
+
+</div>
+
+</div>
+
+<!-- Bottom -->
+
+<div class="bottom">
+
+<!-- Chart -->
+
+<div class="chart-box">
+
+<div class="title">
+
+<h2>Project Progress</h2>
+
+</div>
+
+<canvas id="chart"></canvas>
+
+</div>
+
+<!-- Activity -->
+
+<div class="activity">
+
+<div class="title">
+
+<h2>Recent Activity</h2>
+
+</div>
+
+<div class="activity-item">
+
+<i class="fa-solid fa-file"></i>
+
+<div>
+
+<h4>Sarah created "Marketing Plan"</h4>
+
+<p>2 hours ago</p>
+
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<i class="fa-solid fa-check"></i>
+
+<div>
+
+<h4>Mike completed Documentation</h4>
+
+<p>3 hours ago</p>
+
+</div>
+
+</div>
+
+<div class="activity-item">
+
+<i class="fa-solid fa-comment"></i>
+
+<div>
+
+<h4>Jennifer commented Website Design</h4>
+
+<p>5 hours ago</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
